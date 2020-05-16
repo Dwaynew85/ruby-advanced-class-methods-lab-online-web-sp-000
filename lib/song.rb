@@ -9,11 +9,10 @@ class Song
   end
 
   def self.creae(song)
-    self.new(song)
-  end
-
-
-
+    jam = self.new 
+    jam.name = song
+  end 
+  
   def save
     @@songs << self
   end

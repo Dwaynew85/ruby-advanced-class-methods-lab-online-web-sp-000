@@ -12,8 +12,12 @@ class Song
     @@songs << self
   end
 
-  def all
+  def self.all
     @@songs
+  end
+
+  def self.destroy_all
+    self.all.clear 
   end
 
 end 
